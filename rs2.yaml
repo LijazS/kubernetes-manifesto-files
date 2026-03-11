@@ -10,12 +10,10 @@ spec:
   selector:
     matchLabels:
       app: todo-web
-  
   template:
     metadata:
     labels:
       app: todo-web
-
     spec:
       containers:
         - name: todo-container
