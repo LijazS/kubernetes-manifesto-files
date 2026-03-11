@@ -12,8 +12,8 @@ spec:
       app: todo-web
   template:
     metadata:
-    labels:
-      app: todo-web
+      labels:
+        app: todo-web
     spec:
       containers:
         - name: todo-container
