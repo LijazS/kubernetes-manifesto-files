@@ -19,5 +19,5 @@ spec: # it defines the behaviour of the ReplicaSet
         - name: ey-cart-container
           image: muralisocial123/ey-cart:v1.1.0
           ports:
-           - containerPorts: 3000
+           - containerPort: 3000
   
