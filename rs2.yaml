@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: todo-app2
+  namespace: lijaz-namespace
+  labels: 
+    app: todo-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      - app: todo-web
+  
+  template:
+    metadata:
+    labels:
+      app: todo-web
+
+    spec:
+      containers:
+        - name: todo-container
+          image: lijazs/todo-frontend2:v1.1.0
+          ports:
+            - containerPort: 80
+
+
