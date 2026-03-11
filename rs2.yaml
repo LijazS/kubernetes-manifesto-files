@@ -9,7 +9,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      - app: todo-web
+      app: todo-web
   
   template:
     metadata:
