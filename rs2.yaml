@@ -12,6 +12,7 @@ spec:
       app: todo-web
   template:
     metadata:
+      name: todo-metada?
       labels:
         app: todo-web
     spec:
