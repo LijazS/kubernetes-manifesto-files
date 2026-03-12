@@ -9,11 +9,11 @@ spec: # it defines the behaviour of the ReplicaSet
   replicas: 3
   selector: # it defines how replica set finds the pods to manage
     matchLabels:
-      app: web
+      app: web2
   template: # Contains pod definitions
     metadata:
       labels: 
-        app: web
+        app: web2
     spec: # Contains container defenitions
       containers:
         - name: flipkart-container
