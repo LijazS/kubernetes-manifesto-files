@@ -5,9 +5,9 @@ metadata:
   namespace: lijaz-namespace
   labels:
     app: cart
-spec: # it defines the behaviour of the ReplicaSet
+spec: # it defines the behaviour of the Deployment
   replicas: 3
-  selector: # it defines how replica set finds the pods to manage
+  selector: # it defines how Deployment set finds the pods to manage
     matchLabels:
       app: ey
   template: # Contains pod definitions
