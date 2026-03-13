@@ -18,6 +18,7 @@ spec:
     metadata:
       labels:
         app: fitness
+    spec:
       containers:
         - name: fitness-container
           image: muralisocial123/fitness-app:v1.1.0
