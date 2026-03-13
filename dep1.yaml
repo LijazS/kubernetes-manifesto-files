@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fitness-deployment
+  labels:
+    app: fitness-app
+spec:
+  replicas: 8
+  strategy:
+     type: RollingUpdate
+     rollingUpdate:
+       maxSurge: 2
+       maxUnavailable: 2
+  selector:
+    matchLabels:
+      app: fitness
+  template:
+    metadata:
+      labels:
+        app: fitness
+      containers:
+        - name: fitness-container
+          image: muralisocial123/fitness-app:v1.1.0
+          ports:
+            - containerPort: 3000
+        
